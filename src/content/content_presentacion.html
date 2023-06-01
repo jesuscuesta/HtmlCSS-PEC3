@@ -10,9 +10,15 @@
     sitio web.
   </p>
   <div class="presentation__img">
-    <img loading="lazy" class="presentation-svg" height="150px" src="./assets/imgs/torresvg.svg" alt="Torre Eiffel SVG"/>
+    <img
+      loading="lazy"
+      class="presentation-svg"
+      height="150px"
+      src="./assets/imgs/torresvg.svg"
+      alt="Torre Eiffel SVG"
+    />
   </div>
-  
+
   <h2>Contenido del sitio web</h2>
   <p>
     En nuestro sitio web, encontrarás información relacionada con la Torre
@@ -42,22 +48,37 @@
 </section>
 
 <section>
-    <h2>Galería de imágenes</h2>
-  
-    <div class="gallery">
-      <img loading="lazy"
-        src="./assets/imgs/eiffel.jpg"
-        alt="Vista panorámica dela Torre Eiffel"
+  <h2>Galería de imágenes</h2>
+
+  <div class="gallery">
+    <img
+      loading="lazy"
+      width="100%"
+      src="./assets/imgs/eiffel.jpg"
+      alt="Vista panorámica dela Torre Eiffel"
+    />
+    <img
+      loading="lazy"
+      width="100%"
+      src="./assets/imgs/tiempo.jpg"
+      srcset="./assets/imgs/tiempo-small.jpg 2x"
+      alt="Antiguo y nuevo"
+    />
+    <picture>
+      <source
+        media="(min-width: 800px)"
+        srcset="./assets/imgs/Tour_Eiffel_top-medio.jpg"
       />
-      <img loading="lazy"
-        src="./assets/imgs/tiempo.jpg"
-        srcset="./assets/imgs/tiempo-small.jpg 2x"
-        alt="Antiguo y nuevo"
+      <source
+        media="(min-width: 450px)"
+        srcset="./assets/imgs/Tour_Eiffel_top-small.jpg"
       />
-      <picture>
-        <source media="(min-width: 800px)" srcset="./assets/imgs/Tour_Eiffel_top-medio.jpg">
-        <source media="(min-width: 450px)" srcset="./assets/imgs/Tour_Eiffel_top-small.jpg">
-        <img loading="lazy" src="./assets/imgs/Tour_Eiffel_top-grande.jpg" alt="torre eiffel">
-      </picture>
-    </div>
-  </section>
+      <img
+        width="100%"
+        loading="lazy"
+        src="./assets/imgs/Tour_Eiffel_top-grande.jpg"
+        alt="torre eiffel"
+      />
+    </picture>
+  </div>
+</section>

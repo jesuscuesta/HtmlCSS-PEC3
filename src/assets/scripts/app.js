@@ -1,0 +1,1 @@
+console.log('Prueba de carga de scripts');
